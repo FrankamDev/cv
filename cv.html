@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<title>Frank Kamgang Resume</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    background:#eef2f7;
+    font-family:'Poppins',sans-serif;
+    padding:40px;
+    color:#1e293b;
+}
+
+.resume{
+    max-width:1200px;
+    margin:auto;
+    background:#fff;
+    border-radius:30px;
+    overflow:hidden;
+    display:grid;
+    grid-template-columns:360px 1fr;
+    box-shadow:0 20px 60px rgba(0,0,0,0.08);
+}
+
+/* LEFT SIDE */
+
+.left{
+    background:linear-gradient(180deg,#020617,#0f172a);
+    color:white;
+    padding:50px 35px;
+}
+
+.profile{
+    text-align:center;
+    margin-bottom:45px;
+}
+
+.profile img{
+    width:140px;
+    height:140px;
+    border-radius:50%;
+    object-fit:cover;
+    border:6px solid rgba(255,255,255,0.08);
+    margin-bottom:25px;
+}
+
+.profile h1{
+    font-size:30px;
+    line-height:1.2;
+    font-weight:800;
+}
+
+.profile p{
+    color:#94a3b8;
+    margin-top:12px;
+    font-size:15px;
+}
+
+.sidebar-section{
+    margin-top:45px;
+}
+
+.sidebar-title{
+    font-size:14px;
+    letter-spacing:3px;
+    color:#38bdf8;
+    margin-bottom:22px;
+    font-weight:600;
+}
+
+.contact-item{
+    margin-bottom:18px;
+}
+
+.contact-item span{
+    display:block;
+    color:#64748b;
+    font-size:12px;
+    margin-bottom:5px;
+}
+
+.contact-item p{
+    font-size:14px;
+    line-height:1.7;
+}
+
+.skills{
+    display:flex;
+    flex-wrap:wrap;
+    gap:10px;
+}
+
+.skill{
+    padding:10px 15px;
+    background:rgba(255,255,255,0.06);
+    border:1px solid rgba(255,255,255,0.06);
+    border-radius:12px;
+    font-size:13px;
+}
+
+.soft-skills{
+    display:flex;
+    flex-direction:column;
+    gap:14px;
+}
+
+.soft{
+    background:rgba(255,255,255,0.05);
+    padding:14px;
+    border-radius:14px;
+    font-size:14px;
+}
+
+/* RIGHT SIDE */
+
+.right{
+    padding:60px;
+}
+
+.hero{
+    margin-bottom:55px;
+}
+
+.hero h2{
+    font-size:60px;
+    line-height:0.95;
+    font-weight:800;
+    color:#020617;
+}
+
+.hero h3{
+    margin-top:18px;
+    color:#2563eb;
+    font-size:20px;
+    font-weight:500;
+}
+
+.hero p{
+    margin-top:30px;
+    line-height:2;
+    color:#475569;
+    font-size:15px;
+    max-width:90%;
+}
+
+.section{
+    margin-bottom:50px;
+}
+
+.section-title{
+    font-size:15px;
+    font-weight:700;
+    letter-spacing:3px;
+    color:#2563eb;
+    margin-bottom:25px;
+}
+
+.card{
+    background:#f8fafc;
+    border:1px solid #e2e8f0;
+    padding:28px;
+    border-radius:20px;
+    margin-bottom:20px;
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-5px);
+}
+
+.card-top{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:15px;
+    flex-wrap:wrap;
+    gap:10px;
+}
+
+.card h4{
+    font-size:20px;
+}
+
+.badge{
+    background:#dbeafe;
+    color:#2563eb;
+    padding:8px 14px;
+    border-radius:30px;
+    font-size:12px;
+    font-weight:600;
+}
+
+.card p{
+    line-height:1.9;
+    color:#475569;
+    font-size:14px;
+}
+
+.tech{
+    margin-top:16px;
+    color:#2563eb !important;
+    font-weight:600;
+}
+
+.languages{
+    display:flex;
+    gap:20px;
+    flex-wrap:wrap;
+}
+
+.language{
+    background:#eff6ff;
+    padding:18px 22px;
+    border-radius:16px;
+    font-weight:500;
+    font-size:14px;
+}
+
+@media(max-width:950px){
+
+.resume{
+    grid-template-columns:1fr;
+}
+
+.right{
+    padding:40px;
+}
+
+.hero h2{
+    font-size:42px;
+}
+
+.hero p{
+    max-width:100%;
+}
+
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="resume">
+
+    <!-- LEFT -->
+
+    <div class="left">
+
+        <div class="profile">
+
+            <img src="./me.png" alt="Profile">
+
+            <h1>Frank<br>Kamgang</h1>
+
+            <p>Fullstack Web Developer</p>
+
+        </div>
+
+        <!-- CONTACT -->
+
+        <div class="sidebar-section">
+
+            <div class="sidebar-title">CONTACT</div>
+
+            <div class="contact-item">
+                <span>PHONE</span>
+                <p>+237 690 46 18 30</p>
+            </div>
+
+            <div class="contact-item">
+                <span>EMAIL</span>
+                <p>frankamdev@gmail.com</p>
+            </div>
+
+            <div class="contact-item">
+                <span>LOCATION</span>
+                <p>Bafoussam, Cameroon</p>
+            </div>
+
+            <div class="contact-item">
+                <span>PORTFOLIO</span>
+                <p>online.getomiie.com</p>
+            </div>
+
+            <div class="contact-item">
+                <span>LINKEDIN</span>
+                <p>linkedin.com/in/frank-kamgang</p>
+            </div>
+
+            <div class="contact-item">
+                <span>GITHUB</span>
+                <p>github.com/FrankamDev</p>
+            </div>
+
+        </div>
+
+        <!-- SKILLS -->
+
+        <div class="sidebar-section">
+
+            <div class="sidebar-title">TECH STACK</div>
+
+            <div class="skills">
+
+                <div class="skill">ReactJS</div>
+                <div class="skill">Laravel</div>
+                <div class="skill">TailwindCSS</div>
+                <div class="skill">ThreeJS</div>
+                <div class="skill">JavaScript</div>
+                <div class="skill">PHP</div>
+                <div class="skill">MySQL</div>
+                <div class="skill">REST APIs</div>
+                <div class="skill">Git</div>
+                <div class="skill">GitHub</div>
+                <div class="skill">Hostinger</div>
+                <div class="skill">Vite</div>
+                <div class="skill">Responsive UI</div>
+                <div class="skill">UI/UX</div>
+
+            </div>
+
+        </div>
+
+        <!-- SOFT SKILLS -->
+
+        <div class="sidebar-section">
+
+            <div class="sidebar-title">SOFT SKILLS</div>
+
+            <div class="soft-skills">
+
+                <div class="soft">Problem Solving</div>
+                <div class="soft">Communication</div>
+                <div class="soft">Creativity</div>
+                <div class="soft">Fast Learning</div>
+                <div class="soft">Autonomy</div>
+                <div class="soft">Team Collaboration</div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- RIGHT -->
+
+    <div class="right">
+
+        <!-- HERO -->
+
+        <div class="hero">
+
+            <h2>FRANK<br>KAMGANG</h2>
+
+            <h3>Creative Fullstack Web Developer</h3>
+
+            <p>
+                Creative and passionate Fullstack Web Developer specialized in
+                building modern, scalable and user-friendly digital products.
+                I develop responsive web applications, interactive interfaces
+                and modern frontend experiences using ReactJS, Laravel and
+                TailwindCSS.
+                <br><br>
+                Freelance-oriented developer with strong attention to design,
+                performance and clean architecture. Passionate about continuous
+                learning, UI innovation and digital product creation.
+            </p>
+
+        </div>
+
+        <!-- PROJECTS -->
+
+        <div class="section">
+
+            <div class="section-title">FEATURED PROJECTS</div>
+
+            <div class="card">
+
+                <div class="card-top">
+
+                    <h4>FrankAmDev Portfolio</h4>
+
+                    <div class="badge">Personal Brand</div>
+
+                </div>
+
+                <p>
+                    Designed and developed a modern portfolio platform to showcase
+                    projects, services and digital experiences with clean UI,
+                    responsive layouts and interactive animations.
+                </p>
+
+                <p class="tech">
+                    ReactJS • TailwindCSS • Laravel • UI Design
+                </p>
+
+            </div>
+
+            <div class="card">
+
+                <div class="card-top">
+
+                    <h4>E-Learning Platform</h4>
+
+                    <div class="badge">Web Application</div>
+
+                </div>
+
+                <p>
+                    Developed an online learning platform with user management,
+                    responsive dashboard, authentication system and course
+                    organization features.
+                </p>
+
+                <p class="tech">
+                    Laravel • ReactJS • MySQL • REST API
+                </p>
+
+            </div>
+
+        </div>
+
+        <!-- EXPERIENCE -->
+
+        <div class="section">
+
+            <div class="section-title">FREELANCE EXPERIENCE</div>
+
+            <div class="card">
+
+                <div class="card-top">
+
+                    <h4>Freelance Web Developer</h4>
+
+                    <div class="badge">Remote / Freelance</div>
+
+                </div>
+
+                <p>
+                    Worked with clients on various web development and UI projects.
+                    Designed and developed responsive business websites,
+                    portfolios and modern interfaces focused on performance,
+                    user experience and scalability.
+                    <br><br>
+
+                    • Responsive website development  
+                    • Frontend & backend integration  
+                    • UI/UX modern interfaces  
+                    • Portfolio and business websites  
+                    • Client project customization  
+                    • Web application architecture  
+                </p>
+
+            </div>
+
+        </div>
+
+        <!-- EDUCATION -->
+
+        <div class="section">
+
+            <div class="section-title">EDUCATION</div>
+
+            <div class="card">
+
+                <div class="card-top">
+
+                    <h4>Higher National Diploma (HND)</h4>
+
+                    <div class="badge">Diploma</div>
+
+                </div>
+
+                <p>
+                    Technical and professional education focused on software
+                    development, databases and modern web technologies.
+                </p>
+
+            </div>
+
+            <div class="card">
+
+                <div class="card-top">
+
+                    <h4>Professional Qualification Diploma</h4>
+
+                    <div class="badge">Technical Education</div>
+
+                </div>
+
+                <p>
+                    Professional training in technical and digital skills with
+                    focus on practical problem solving and software fundamentals.
+                </p>
+
+            </div>
+
+        </div>
+
+        <!-- LANGUAGES -->
+
+        <div class="section">
+
+            <div class="section-title">LANGUAGES</div>
+
+            <div class="languages">
+
+                <div class="language">
+                    French — Native
+                </div>
+
+                <div class="language">
+                    English — Intermediate
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+</body>
+</html>
